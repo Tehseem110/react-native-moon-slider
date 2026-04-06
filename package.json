@@ -1,5 +1,5 @@
 {
-  "name": "react-native-rotary",
+  "name": "react-native-moon-slider",
   "version": "0.1.0",
   "description": "A circular rotary knob/slider component for React Native with smooth Skia animations and gesture support for selecting or displaying values.",
   "main": "./lib/module/index.js",
