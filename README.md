@@ -13,6 +13,7 @@ A circular rotary knob/slider component for React Native with smooth Skia animat
 - 📦 TypeScript support
 
 ## Installation
+
 ```sh
 npm install react-native-moon-slider
 ```
@@ -20,11 +21,13 @@ npm install react-native-moon-slider
 ### Peer Dependencies
 
 Make sure you have these installed in your project:
+
 ```sh
 npm install @shopify/react-native-skia react-native-gesture-handler react-native-reanimated expo-haptics
 ```
 
 ## Usage
+
 ```tsx
 import { useState } from 'react';
 import { View, Text } from 'react-native';
@@ -65,25 +68,26 @@ export default function App() {
 
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `min` | `number` | `0` | Minimum value |
-| `max` | `number` | `100` | Maximum value |
-| `value` | `number` | `0` | Current value |
-| `onValueChange` | `(value: number) => void` | - | Callback when value changes |
-| `diameter` | `number` | `300` | Diameter of the slider |
-| `sliderWidth` | `number` | `20` | Thickness of the arc |
-| `thumbRadius` | `number` | `24` | Size of the draggable thumb |
-| `startAngle` | `number` | `135` | Start angle in degrees |
-| `endAngle` | `number` | `45` | End angle in degrees |
-| `trackColor` | `string` | `#E0E0E0` | Unfilled arc color |
-| `fillColor` | `string` | `#4A90E2` | Filled arc color |
-| `thumbColor` | `string` | `#FFFFFF` | Thumb fill color |
-| `thumbStrokeColor` | `string` | `#4A90E2` | Thumb border color |
-| `haptics` | `boolean` | `true` | Enable/disable haptic feedback |
-| `renderCenter` | `() => ReactNode` | - | Custom center content |
+| Prop               | Type                      | Default   | Description                    |
+| ------------------ | ------------------------- | --------- | ------------------------------ |
+| `min`              | `number`                  | `0`       | Minimum value                  |
+| `max`              | `number`                  | `100`     | Maximum value                  |
+| `value`            | `number`                  | `0`       | Current value                  |
+| `onValueChange`    | `(value: number) => void` | -         | Callback when value changes    |
+| `diameter`         | `number`                  | `300`     | Diameter of the slider         |
+| `sliderWidth`      | `number`                  | `20`      | Thickness of the arc           |
+| `thumbRadius`      | `number`                  | `24`      | Size of the draggable thumb    |
+| `startAngle`       | `number`                  | `135`     | Start angle in degrees         |
+| `endAngle`         | `number`                  | `45`      | End angle in degrees           |
+| `trackColor`       | `string`                  | `#E0E0E0` | Unfilled arc color             |
+| `fillColor`        | `string`                  | `#4A90E2` | Filled arc color               |
+| `thumbColor`       | `string`                  | `#FFFFFF` | Thumb fill color               |
+| `thumbStrokeColor` | `string`                  | `#4A90E2` | Thumb border color             |
+| `haptics`          | `boolean`                 | `true`    | Enable/disable haptic feedback |
+| `renderCenter`     | `() => ReactNode`         | -         | Custom center content          |
 
 ## Ref Methods
+
 ```tsx
 const sliderRef = useRef<CircularSliderRef>(null);
 

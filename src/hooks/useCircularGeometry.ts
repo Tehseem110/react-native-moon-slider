@@ -5,6 +5,7 @@ interface GeometryConfig {
   sliderWidth: number;
   startAngle: number;
   endAngle: number;
+  thumbRadius: number;
 }
 
 export const useCircularGeometry = ({
@@ -12,13 +13,14 @@ export const useCircularGeometry = ({
   sliderWidth,
   startAngle,
   endAngle,
+  thumbRadius,
 }: GeometryConfig) => {
   return useMemo(() => {
-    const cx = diameter / 2;
-    const cy = diameter / 2;
+    const cx = diameter / 2 + thumbRadius;
+    const cy = diameter / 2 + thumbRadius;
     const radius = diameter / 2 - sliderWidth / 2;
     const totalArcDeg = (endAngle - startAngle + 360) % 360 || 360;
 
     return { cx, cy, radius, totalArcDeg };
-  }, [diameter, sliderWidth, startAngle, endAngle]);
+  }, [diameter, sliderWidth, startAngle, endAngle, thumbRadius]);
 };

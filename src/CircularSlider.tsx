@@ -36,6 +36,7 @@ const CircularSlider = forwardRef<CircularSliderRef, CircularSliderProps>(
       sliderWidth,
       startAngle,
       endAngle,
+      thumbRadius,
     });
 
     const {
@@ -86,9 +87,19 @@ const CircularSlider = forwardRef<CircularSliderRef, CircularSliderProps>(
     });
 
     return (
-      <View style={{ width: diameter, height: diameter }}>
+      <View
+        style={{
+          width: diameter + thumbRadius * 2,
+          height: diameter + thumbRadius * 2,
+        }}
+      >
         <GestureDetector gesture={panGesture}>
-          <Canvas style={{ width: diameter, height: diameter }}>
+          <Canvas
+            style={{
+              width: diameter + thumbRadius * 2,
+              height: diameter + thumbRadius * 2,
+            }}
+          >
             <Path
               path={trackPath}
               color={trackColor}
@@ -127,7 +138,10 @@ const CircularSlider = forwardRef<CircularSliderRef, CircularSliderProps>(
             pointerEvents="none"
             style={[
               styles.centerOverlay,
-              { width: diameter, height: diameter },
+              {
+                width: diameter + thumbRadius * 2,
+                height: diameter + thumbRadius * 2,
+              },
             ]}
           >
             {renderCenter()}
