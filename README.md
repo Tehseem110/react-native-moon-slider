@@ -14,7 +14,7 @@ A circular rotary knob/slider component for React Native with smooth Skia animat
 
 ## Installation
 ```sh
-npm install react-native-rotary
+npm install react-native-moon-slider
 ```
 
 ### Peer Dependencies
@@ -29,7 +29,7 @@ npm install @shopify/react-native-skia react-native-gesture-handler react-native
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { CircularSlider } from 'react-native-rotary';
+import { CircularSlider } from 'react-native-moon-slider';
 
 export default function App() {
   const [volume, setVolume] = useState(40);

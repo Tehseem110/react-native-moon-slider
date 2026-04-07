@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { CircularSlider } from 'react-native-rotary';
+import { CircularSlider } from 'react-native-moon-slider';
 
 export default function App() {
   const [volume, setVolume] = useState(40);

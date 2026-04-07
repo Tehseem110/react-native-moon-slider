@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-rotary": ["./src/index"]
+      "react-native-moon-slider": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

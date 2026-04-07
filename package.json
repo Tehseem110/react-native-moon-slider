@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-rotary-example",
+    "example": "yarn workspace react-native-moon-slider-example",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "typecheck": "tsc",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tehseem110/react-native-rotary.git"
+    "url": "git+https://github.com/Tehseem110/react-native-moon-slider.git"
   },
   "author": "Tehseem <tehseem010@gmail.com> (https://github.com/Tehseem110)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tehseem110/react-native-rotary/issues"
+    "url": "https://github.com/Tehseem110/react-native-moon-slider/issues"
   },
-  "homepage": "https://github.com/Tehseem110/react-native-rotary#readme",
+  "homepage": "https://github.com/Tehseem110/react-native-moon-slider#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
