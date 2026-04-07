@@ -2,15 +2,24 @@
 
 A circular rotary knob/slider component for React Native with smooth Skia animations and gesture support for selecting or displaying values.
 
+## UI Preview
+
+> Add your screenshot and GIF in `.github/assets/` and keep these URLs.
+> npm will render them automatically from GitHub.
+
+| Preview 1 | Preview 2 | Preview 3 |
+| --- | --- | --- |
+| ![Moon Slider Preview 1](https://raw.githubusercontent.com/Tehseem110/react-native-moon-slider/main/.github/assets/preview_img1.png) | ![Moon Slider Preview 2](https://raw.githubusercontent.com/Tehseem110/react-native-moon-slider/main/.github/assets/preview_img2.png) | ![Moon Slider Preview 3](https://raw.githubusercontent.com/Tehseem110/react-native-moon-slider/main/.github/assets/preview_img3.png) |
+
 ## Features
 
-- 🎨 Built with `@shopify/react-native-skia` for smooth 60 FPS rendering
-- 👆 Gesture support via `react-native-gesture-handler`
-- 📳 Optional haptic feedback
-- 🎯 Customizable colors, size, angles, and thumb
-- 💡 Custom center content via `renderCenter`
-- 🔧 Controlled component with `ref.setValue()` support
-- 📦 TypeScript support
+- Built with `@shopify/react-native-skia` for smooth 60 FPS rendering
+- Gesture support via `react-native-gesture-handler`
+- Optional haptic feedback
+- Customizable colors, size, angles, and thumb
+- Custom center content via `renderCenter`
+- Controlled component with `ref.setValue()` support
+- TypeScript support
 
 ## Installation
 
